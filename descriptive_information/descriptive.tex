@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{blindtext}
+\parskip=12pt 
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+
+\usepackage{epsfig}
+\usepackage{epstopdf}
+
+\usepackage{bigints}
+\usepackage{lastpage} 
+\usepackage{comment} 
+\usepackage{setspace}
+\usepackage{enumerate}
+
+
+\usepackage{float,lscape}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{dcolumn}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+%\renewcommand{\baselinestretch}{1.50}\normalsize
+\usepackage{multirow}
+
+\usepackage{verbatim} 
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{nth}
+
+\usepackage{framed}
+
+\usepackage{bm}
+
+\usepackage{relsize}
+
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%\setcounter{tocdepth}{2}
+\usepackage{abstract}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\usepackage{lscape}
+\usepackage{pdflscape}
+
+\newcommand{\E}{\mathop{\mbox{\sf E}}} 
+\newcommand{\Var}{\mathop{\mbox{\sf Var}}}     % ISE
+\newcommand{\Cov}{\mathop{\mbox{\sf Cov}}}     % ISE
+\newcommand{\QQ}{\mathop{\mbox{\sf Q}}}     % ISE
+\newcommand{\PP}{\mathop{\mbox{\sf P}}}     % ISE
+
+\theoremstyle{plain}
+\newtheorem{lem}{Lemma}[subsection]
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[subsection]
+\newtheorem{defn}{Definition}[subsection]
+\newtheorem{prop}{Proposition}[subsection]
+
+
+\definecolor{darkgreen}{HTML}{007F00}
+\definecolor{dblue}{HTML}{000099}
+
+\newcolumntype{.}{D{.}{.}{-1}}
+
+\begin{document}
+
+\section*{Tables}
+
+\newgeometry{top=1cm, bottom=2cm, left=2cm, right=1cm}
+
+\begin{landscape}
+\begin{table}[ht!]
+\centering
+\scalebox{0.6}{
+\begin{tabular}{l l l l l p{5cm} c} % 
+\hline \hline
+Sector (GICS)  & Asset class & Ticker & Name & Industry (GICS) & Benchmark Index & Average records \\ 
+\hline
+ \multirow{5}{*}{Energy} & Equity        & OXY  & Occidental Petroleum Corporation & Oil, Gas \& Consumable Fuels & None & 39,549,562  \\ 
+             & Equity         & SLB  & Schlumberger Ltd                           & Energy Equipment \& Services & None & 36,676,552  \\ 
+             & Equity         & XOM    & Exxon Mobil Corporation & Oil, Gas \& Consumable Fuels
+                    & None   & 36,193,946     \\ 
+             & Equity/ETF & XLE  & Energy Select Sector SPDR Fund & None & S\&P Energy Select Sector Index & 59,886,120  \\ 
+\hline
+ \multirow{5}{*}{Materials} & Equity        & CF     & CF Industries Holdings, Inc. & Chemicals & None  & 21,922,437  \\ 
+                & Equity         & NEM  & Newmont Mining Corporation            & Metals \& Mining & None & 21,850,215  \\  
+                & Equity         & DOW    & Dow Chemical Company      & Chemicals                  & None   & 21,540,186    \\
+                & Equity/ETF & GDX  & Market Vectors Gold Miners ETF & None & NYSE Arca Gold Miners Index & 23,116,140  \\ 
+\hline
+ \multirow{5}{*}{Industrials} & Equity        & AAL & American Airlines Group Inc. & Airlines & None & 30,668,916  \\ 
+                  & Equity         & BA  & Boeing Company                   & Aerospace \& Defense & None & 29,482,457  \\  
+                  & Equity         & UAL    & United Continental Holdings, Inc.     & Airlines                   & None   & 29,068,289     \\
+                  & Equity/ETF & DIA  & Market Vectors Gold Miners ETF & None & NYSE Arca Gold Miners Index & 98,608,729  \\ 
+\hline 
+ \multirow{5}{4cm}{Consumer Discretionary} & Equity & PCLN & Priceline Group Inc. & Internet \& Direct Marketing Retail & None & 150,558,600  \\ 
+                & Equity         & NFLX  & Netflix, Inc.            & Internet \& Direct Marketing Retail & None & 134,293,600  \\  
+                & Equity         & AMZN    & Amazon.com, Inc.      & Internet \& Direct Marketing Retail  & None   & 80,479,561    \\
+                & Equity/ETF & XRT  & SPDR S\&P Retail ETF & None & S\&P Retail Select Industry Index & 22,419,360  \\ 
+\hline
+ \multirow{5}{4cm}{Consumer Staples} & Equity  & GMCR  & Keurig Green Mountain Inc. & Food, Beverage \& Tobacco & None  & 47,311,823  \\ 
+                & Equity         & PG  & Procter \& Gamble Company            & Household Products & None & 23,721,453  \\  
+                & Equity         & WMT    & Wal-Mart Stores, Inc.     &  Food \& Staples Retailing      & None   & 22,800,969     \\
+                & Equity/ETF & XLP  & Consumer Staples Select Sector SPDR Fund & None & S\&P Consumer Staples Select Sector Index & 8,777,949  \\ 
+\hline 
+ \multirow{5}{*}{Health Care} & Equity        & GILD     & Gilead Sciences, Inc. & Biotechnology & None  & 35,510,510  \\ 
+                     & Equity         & ISRG  & Intuitive Surgical, Inc.   & Health Care Equipment \& Supplies & None & 32,818,097  \\  
+                     & Equity         & BIIB    & Biogen Inc.     & Biotechnology             & None   & 29,171,603     \\
+                     & Equity/ETF & XLV  & Health Care Select Sector SPDR ETF & None & S\&P Health Care Select Sector Index & 17,550,786  \\ 
+\hline 
+ \multirow{5}{*}{Financials} & Equity        & JPM & JPMorgan Chase \& Co. & Banks  & None  & 42,997,050  \\ 
+                  & Equity         & C     & Citigroup Inc.           &  Banks & None & 41,337,890  \\  
+                  & Equity         &  BAC  & Bank of America Corporation     &  Banks               & None   & 36,039,144     \\
+                  & Equity/ETF & SPY  & SPDR S\&P 500 ETF & None & S\&P 500 Index & 700,746,500  \\ 
+\hline 
+ \multirow{5}{4cm}{Information Technology} & Equity & AAPL & Apple Inc. & Technology Hardware, Storage \& Peripherals  & None  & 301,482,992  \\ 
+                  & Equity         & FB     & Facebook Inc.           &  Internet Software \& Services & None & 153,780,365  \\  
+                  & Equity         & GOOGL    &  Alphabet Inc.    &    Internet Software \& Services  & None   & 74,797,969    \\
+                  & Equity/ETF & XLK  & Technology Select Sector SPDR Fund & None & S\&P Technology Select Sector Index& 9,489,059  \\ 
+\hline
+ \multirow{5}{4cm}{Telecommunication Services} & Equity & VZ & Verizon Communications Inc. \& Co. & Diversified Telecommunication Services  & None & 24,042,989  \\ 
+                  & Equity         & T     & AT\&T Inc.           &  Diversified Telecommunication Services & None & 18,932,477  \\  
+                  & Equity         &  TMUS  & T-Mobile US, Inc.     &   Wireless Telecommunication Services   & None  & 4,654,058     \\
+                  & Equity/ETF & VOX  & Vanguard Telecommunication Services ETF & None & MSCI US Investable Market Telecommunication Services 25/50 Index & 70,822  \\ 
+\hline
+ \multirow{5}{*}{Utilities} & Equity & EXC & Exelon Corporation & Electric Utilities  & None  & 3,156,885  \\ 
+                  & Equity         & DUK     & Duke Energy Corporation     &  Electric Utilities & None & 2,102,557  \\  
+                  & Equity         & SO   &  Southern Company    &   Electric Utilities   & None   &  1,931,054   \\
+                  & Equity/ETF & XLU  & Utilities Select Sector SPDR Fund & None & S\&P Utilities Select Sector Index & 13,934,304  \\ 
+\hline
+ \multirow{5}{*}{Real Estate} & Equity        & AMT & American Tower Corporation & Equity Real Estate Investment Trusts (REITs)  & None  & 3,265,959  \\ 
+                    & Equity & SPG     & Simon Property Group &  Equity Real Estate Investment Trusts (REITs) & None & 2,763,070  \\ 
+                    & Equity         & WY   &  Weyerhaeuser Co.    &    Equity Real Estate Investment Trusts (REITs) & None  & 1,839,012    \\ 
+                    & Equity/ETF & DRN  & Direxion Daily MSCI Real Est Bull 3X ETF & None & MSCI US REIT Index & 1,155,091  \\ 								
+\hline \hline
+\end{tabular}
+}
+\caption{\footnotesize Most traded underlying assets in the OPRA database; classification by GICS; all months}
+\label{sumstat}
+\end{table} 
+
+
+\begin{table}[ht!]
+\centering
+\scalebox{0.9}{
+\def\arraystretch{1.5}
+\begin{tabular}{l l l l l c} % 
+\hline \hline
+Objective & Ticker & ETP Type & Name  & Benchmark Index & Average records \\ 
+\hline
+ Alternative Investments & VXX  & ETN  & iPath S\&P 500 VIX Short-Term Futures ETN & S\&P 500 VIX Short-Term Futures Index & 188,227,124  \\ 
+ Asia & RUSS  & ETF  & Direxion Daily Russia Bear 3X ETF & VanEck Vectors Russia Index & 520,660  \\ 
+ Fixed Income & TTT  & ETF  & ProShares UltraPro Short 20+ Year Trs & ICE U.S. Treasury 20+ Year Bond Index & 323,514  \\
+ Currency & EUO  & ETF  & ProShares UltraShort Euro & EUR/USD exchange rate & 510,690  \\
+ Emerging Markets & EDZ  & ETF  & Direxion Daily MSCI Em Mkts Bear 3X ETF & MSCI Emerging Markets Index & 817,871  \\
+ Europe & EPV  & ETF  & ProShares UltraShort FTSE Europe & FTSE Developed Europe Index & 755,322  \\
+ Large-Cap & UPRO & ETF  & ProShares UltraPro S\&P500 & S\&P 500 Index & 17,062,179  \\
+ Mixed Asset & UVXY & ETF  & ProShares Ultra VIX Short-Term Futures & S\&P 500 VIX Short-Term Futures Index & 73,864,934  \\
+ Small-Cap & VTWO  & ETF  & Vanguard Russell 2000 ETF & Russell 2000 Index & 127,809  \\             							
+\hline \hline
+\end{tabular}
+}
+\caption{\footnotesize Most traded underlying ETPs in the OPRA database by various objectives}
+\label{sumstat}
+\end{table} 
+
+\end{landscape}
+
+\end{document}
+
+
