@@ -1,0 +1,69 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[A\"{i}t-Sahalia and Lo(1998)]{ait_sahalia_lo_1}
+Y.~A\"{i}t-Sahalia and A.~Lo.
+\newblock Nonparametric estimation of state-price densities implicit in
+  financial asset prices.
+\newblock \emph{Journal of Finance}, 3\penalty0 (2):\penalty0 499--547, 1998.
+
+\bibitem[A\"{i}t-Sahalia and Lo(2000)]{ait_sahalia_lo_2}
+Y.~A\"{i}t-Sahalia and A.~Lo.
+\newblock Nonparametric risk management and implied risk aversion.
+\newblock \emph{Journal of Econometrics}, 94:\penalty0 9--51, 2000.
+
+\bibitem[Breeden and Litzenberger(1996)]{breeden_litz}
+D.~T. Breeden and R.~H. Litzenberger.
+\newblock Prices of state-contingent claims implicit in option prices.
+\newblock \emph{Journal of Business}, 51\penalty0 (4):\penalty0 621--651, 1996.
+
+\bibitem[Goyenko et~al.(2009)Goyenko, Holden, and Trzcinka]{goyenko_et_al}
+R.~Y. Goyenko, C.~W. Holden, and C.~A. Trzcinka.
+\newblock Do liquidity measures measure liquidity?
+\newblock \emph{Journal of Financial Economics}, 92:\penalty0 153--181, 2009.
+
+\bibitem[H\"{a}rdle et~al.(2004)H\"{a}rdle, M\"{u}ller, Sperlich, and
+  Werwatz]{haerdle_et_al}
+W.~H\"{a}rdle, M.~M\"{u}ller, S.~Sperlich, and A.~Werwatz.
+\newblock \emph{Nonparametric and Semiparametric Models: An Introduction}.
+\newblock Springer, 2004.
+
+\bibitem[Hasbrouck(2009)]{hasbrouck}
+J.~Hasbrouck.
+\newblock Trading costs and returns for u.s. equities: Estimating effective
+  costs from daily data.
+\newblock \emph{Journal of Finance}, 64\penalty0 (3):\penalty0 1445--1477,
+  2009.
+
+\bibitem[Hastie et~al.(2008)Hastie, Tibshirani, and Friedman]{hastie_et_al}
+T.~Hastie, R.~Tibshirani, and J.~Friedman.
+\newblock \emph{The Elements of Statistical Learning: Data Mining, Inference
+  and Prediction}.
+\newblock Springer, 2008.
+
+\bibitem[Huang and Stoll(1996)]{huang_stoll}
+R.~Huang and H.~Stoll.
+\newblock Dealer versus auction markets: a paired comparison of execution costs
+  on nasdaq and the nyse.
+\newblock \emph{Journal of Financial Economics}, 41:\penalty0 313--357, 1996.
+
+\bibitem[Lee and Ready(1991)]{lee_ready}
+C.~M.~C. Lee and M.~J. Ready.
+\newblock Inferring trade direction from intraday data.
+\newblock \emph{Journal of Finance}, 46\penalty0 (2):\penalty0 733--746, 1991.
+
+\bibitem[Li and Racine(2011)]{li_racine}
+Q.~Li and J.~Racine.
+\newblock \emph{Nonparametric Econometrics: Theory and Practice}.
+\newblock Princeton University Press, 2011.
+
+\bibitem[Song and Xiu(2016)]{song_xiu}
+Z.~Song and D.~Xiu.
+\newblock A tale of two option markets: Pricing kernels and volatility risk.
+\newblock \emph{Journal of Econometrics}, 190:\penalty0 176--196, 2016.
+
+\end{thebibliography}

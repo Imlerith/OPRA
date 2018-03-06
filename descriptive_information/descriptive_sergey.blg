@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: descriptive_sergey.aux
+The style file: plainnat.bst
+Database file #1: descriptive_sergey.bib
+You've used 11 entries,
+            2773 wiz_defined-function locations,
+            653 strings with 6249 characters,
+and the built_in function-call counts, 4778 in all, are:
+= -- 414
+> -- 256
+< -- 8
++ -- 86
+- -- 75
+* -- 377
+:= -- 743
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 55
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 223
+empty$ -- 415
+format.name$ -- 100
+if$ -- 1007
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 14
+newline$ -- 63
+num.names$ -- 44
+pop$ -- 110
+preamble$ -- 1
+purify$ -- 47
+quote$ -- 0
+skip$ -- 169
+stack$ -- 0
+substring$ -- 187
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 106
+warning$ -- 0
+while$ -- 41
+width$ -- 0
+write$ -- 147
